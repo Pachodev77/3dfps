@@ -3,5 +3,15 @@
     "deploymentEnabled": {
       "lfs": true
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/socket.io/socket.io.js",
+      "destination": "/node_modules/socket.io-client/dist/socket.io.js"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
+    }
+  ]
 }
