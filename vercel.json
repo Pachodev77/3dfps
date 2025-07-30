@@ -6,8 +6,8 @@
   },
   "routes": [
     {
-      "src": "/socket.io/socket.io.js",
-      "dest": "/node_modules/socket.io-client/dist/socket.io.js"
+      "src": "/socket.io.js",
+      "dest": "/socket.io.js"
     },
     {
       "src": "/assets/(.*)",
@@ -15,7 +15,7 @@
     },
     {
       "src": "/favicon.ico",
-      "dest": "/public/favicon.ico" 
+      "dest": "/favicon.ico"
     },
     {
       "src": "/(.*)",

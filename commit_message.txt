@@ -1,1 +1,1 @@
-Initial commit with LFS
+Use Vercel routes for static file serving

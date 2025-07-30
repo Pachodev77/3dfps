@@ -10,9 +10,7 @@ const io = new Server(server);
 const players = {};
 
 // Servir archivos estáticos
-app.use(express.static(path.join(__dirname, '')));
-app.use('/socket.io', express.static(path.join(__dirname, 'node_modules', 'socket.io-client', 'dist')));
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
+// Servir archivos estáticos
 
 io.on('connection', (socket) => {
   // Nuevo jugador
