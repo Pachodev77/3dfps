@@ -4,22 +4,19 @@
       "lfs": true
     }
   },
-  "routes": [
+  "functions": {
+    "api/server.js": {
+      "runtime": "node18.x"
+    }
+  },
+  "rewrites": [
     {
-      "src": "/socket.io.js",
-      "dest": "/socket.io.js"
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
     },
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/public/$1"
     }
   ]
 }

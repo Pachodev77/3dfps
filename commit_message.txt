@@ -1,1 +1,1 @@
-Use Vercel routes for static file serving
+Refactor static file serving for Vercel
