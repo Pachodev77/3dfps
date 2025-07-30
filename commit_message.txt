@@ -1,1 +1,1 @@
-Initial commit with LFS files
+Initial commit with LFS
