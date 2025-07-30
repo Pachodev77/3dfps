@@ -4,14 +4,22 @@
       "lfs": true
     }
   },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/socket.io/socket.io.js",
-      "destination": "/node_modules/socket.io-client/dist/socket.io.js"
+      "src": "/socket.io/socket.io.js",
+      "dest": "/node_modules/socket.io-client/dist/socket.io.js"
     },
     {
-      "source": "/assets/(.*)",
-      "destination": "/assets/$1"
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/public/favicon.ico" 
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
